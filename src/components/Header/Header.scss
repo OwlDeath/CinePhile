@@ -1,0 +1,50 @@
+.header{
+    background: rgba(20, 20, 20, 0.5);
+    padding: 25px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-list{
+            display: flex;
+            gap: 30px;
+            a{
+                font-weight: 700;
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.6);
+                position: relative;
+                transition: .5s;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 41%;
+                    top: 28px;
+                    width: 15px;
+                    height: 15px;
+                    background: #159a0300;
+                    border-radius: 100%;
+                    display: block;
+                    transition: .5s;
+                }
+                &:hover{
+                    color: white;
+                    &::after{
+                        background: #149a03;
+                    }
+                }
+                &.active{
+                    color: white;
+                    &::after{
+                        background: #159a03;
+                    }
+                }
+            }
+        }
+    }
+}

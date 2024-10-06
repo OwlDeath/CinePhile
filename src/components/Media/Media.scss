@@ -1,0 +1,48 @@
+.media{
+    padding-top: 140px;
+    h2{
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        &-item{
+            width: 311px;
+            height: 462px;
+            img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+    .pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        gap: 30px;
+        color: white;
+        span{
+            font-size: 20px;
+        }
+        button{
+            padding: 10px 30px;
+            background: none;
+            color: white;
+            font-size: 20px;
+            border: 1px white solid;
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+                background: white;
+                color: black;
+            }
+        }
+    }
+}
